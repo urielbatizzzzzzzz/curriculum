@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: Letter; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Calibri", "Segoe UI", Arial, sans-serif;
+    color: #1a1a1a;
+    font-size: 10.2pt;
+    line-height: 1.34;
+    padding: 0.5in 0.62in;
+  }
+  h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: #0b0b0b;
+  }
+  .tagline {
+    font-size: 9.6pt;
+    font-weight: 600;
+    color: #2a4b8d;
+    margin-top: 2px;
+  }
+  .contact {
+    font-size: 9pt;
+    color: #444;
+    margin-top: 4px;
+  }
+  .contact a { color: #2a4b8d; text-decoration: none; }
+  h2 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0b0b0b;
+    border-bottom: 1.4px solid #2a4b8d;
+    padding-bottom: 2px;
+    margin-top: 13px;
+    margin-bottom: 6px;
+  }
+  p.summary { text-align: justify; }
+  .project { margin-bottom: 7px; }
+  .project .head { display: flex; justify-content: space-between; align-items: baseline; }
+  .project .title { font-weight: 700; font-size: 10.4pt; }
+  .project .meta { font-style: italic; color: #555; font-size: 9pt; white-space: nowrap; padding-left: 8px; }
+  ul { list-style: none; margin-top: 2px; }
+  li { position: relative; padding-left: 13px; margin-top: 2.5px; text-align: justify; }
+  li::before { content: "▪"; position: absolute; left: 0; color: #2a4b8d; font-size: 8pt; top: 1px; }
+  code { font-family: "Consolas", monospace; background: #f0f2f6; padding: 0 3px; border-radius: 3px; font-size: 9pt; }
+  .edu { margin-bottom: 5px; }
+  .edu .inst { font-weight: 700; }
+  .edu .course { font-style: italic; color: #555; font-size: 9pt; }
+  .skills { line-height: 1.6; }
+  .skills b { color: #0b0b0b; }
+</style>
+</head>
+<body>
+  <h1>Uriel Castorela Cuevas</h1>
+  <div class="tagline">Ingeniero en Inteligencia Artificial (en formación) · Arquitecturas Multi-Tenant · Fintech · Optimización Algorítmica</div>
+  <div class="contact">
+    castorela.cuevas.uriel@gmail.com &nbsp;·&nbsp; Ciudad de México &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/uriel-castorela-cuevas/">linkedin.com/in/uriel-castorela-cuevas</a> &nbsp;·&nbsp;
+    <a href="https://github.com/urielbatizzzzzzzz">github.com/urielbatizzzzzzzz</a>
+  </div>
+
+  <h2>Resumen Profesional</h2>
+  <p class="summary">Ingeniero de software enfocado en la construcción de sistemas SaaS de alta disponibilidad y motores transaccionales robustos. Experiencia diseñando arquitecturas multi-tenant seguras con aislamiento estricto de datos y enrutamiento dinámico. Especializado en resolver cuellos de botella en procesamiento concurrente mediante refactorización asíncrona y optimización algorítmica.</p>
+
+  <h2>Proyectos Técnicos Destacados</h2>
+
+  <div class="project">
+    <div class="head"><span class="title">Castoralia — Sistema SaaS Multi-Tenant para Gestión Clínica</span></div>
+    <ul>
+      <li>Garanticé el aislamiento criptográfico y la concurrencia segura de datos para múltiples clínicas dentales, alcanzando una retención de integridad del 100% mediante una arquitectura multi-tenant basada en asignación y enrutamiento dinámico de subdominios.</li>
+      <li>Diseñé el sistema de extremo a extremo, desde la concepción del branding hasta la normalización de la base de datos relacional para soportar historias clínicas a escala.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="head"><span class="title">FinWise — Motor Transaccional de Sostenibilidad Financiera</span><span class="meta">Capital One Hackathon</span></div>
+    <ul>
+      <li>Refactoricé un cuello de botella bloqueante hacia una arquitectura asíncrona, habilitando el soporte de picos masivos de usuarios concurrentes sin degradación del servicio.</li>
+      <li>Implementé un motor de cálculo preciso para gestión de deudas, controlado por una máquina de estados finitos estricta (ciclos seguros 8→9→4→0) y evaluación dinámica de expresiones algebraicas para calcular amortizaciones respetando la precedencia de operadores (ej. <code>8+6/2*(3+1)</code>).</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="head"><span class="title">Motores de Resolución Espacial e IA — Optimización Algorítmica</span></div>
+    <ul>
+      <li>Reduje la huella de memoria optimizando algoritmos de búsqueda informada (GBFS y A*) en entornos de alta complejidad, escalando desde mallas de 9×7 hasta problemas dimensionales mayores sobre el runtime nativo de Python 3.14.</li>
+    </ul>
+  </div>
+
+  <h2>Educación</h2>
+  <div class="edu">
+    <div class="inst">Escuela Superior de Cómputo (ESCOM — IPN) — Ingeniería en Inteligencia Artificial</div>
+    <div class="course">Cursos relevantes: Arquitectura de Sistemas, Algoritmos, Estructuras de Datos</div>
+  </div>
+  <div class="edu">
+    <div class="inst">CECyT 9 "Juan de Dios Bátiz" (IPN) — Técnico en Programación</div>
+  </div>
+
+  <h2>Habilidades Técnicas</h2>
+  <div class="skills">
+    <b>Lenguajes:</b> Python | TypeScript | Java &nbsp;·&nbsp;
+    <b>Backend/SaaS:</b> NestJS | React | Django &nbsp;·&nbsp;
+    <b>Bases de Datos:</b> PostgreSQL | MySQL | Multi-Tenant &nbsp;·&nbsp;
+    <b>Core:</b> POO | A* | Máquinas de Estado
+  </div>
+</body>
+</html>

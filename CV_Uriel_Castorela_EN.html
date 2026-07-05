@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  @page { size: Letter; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: "Calibri", "Segoe UI", Arial, sans-serif;
+    color: #1a1a1a;
+    font-size: 10.2pt;
+    line-height: 1.34;
+    padding: 0.5in 0.62in;
+  }
+  h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: #0b0b0b;
+  }
+  .tagline {
+    font-size: 9.6pt;
+    font-weight: 600;
+    color: #2a4b8d;
+    margin-top: 2px;
+  }
+  .contact {
+    font-size: 9pt;
+    color: #444;
+    margin-top: 4px;
+  }
+  .contact a { color: #2a4b8d; text-decoration: none; }
+  h2 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0b0b0b;
+    border-bottom: 1.4px solid #2a4b8d;
+    padding-bottom: 2px;
+    margin-top: 13px;
+    margin-bottom: 6px;
+  }
+  p.summary { text-align: justify; }
+  .project { margin-bottom: 7px; }
+  .project .head { display: flex; justify-content: space-between; align-items: baseline; }
+  .project .title { font-weight: 700; font-size: 10.4pt; }
+  .project .meta { font-style: italic; color: #555; font-size: 9pt; white-space: nowrap; padding-left: 8px; }
+  ul { list-style: none; margin-top: 2px; }
+  li { position: relative; padding-left: 13px; margin-top: 2.5px; text-align: justify; }
+  li::before { content: "▪"; position: absolute; left: 0; color: #2a4b8d; font-size: 8pt; top: 1px; }
+  code { font-family: "Consolas", monospace; background: #f0f2f6; padding: 0 3px; border-radius: 3px; font-size: 9pt; }
+  .edu { margin-bottom: 5px; }
+  .edu .inst { font-weight: 700; }
+  .edu .course { font-style: italic; color: #555; font-size: 9pt; }
+  .skills { line-height: 1.6; }
+  .skills b { color: #0b0b0b; }
+</style>
+</head>
+<body>
+  <h1>Uriel Castorela Cuevas</h1>
+  <div class="tagline">AI Engineering Student · Multi-Tenant Architectures · Fintech · Algorithmic Optimization</div>
+  <div class="contact">
+    castorela.cuevas.uriel@gmail.com &nbsp;·&nbsp; Mexico City &nbsp;·&nbsp;
+    <a href="https://www.linkedin.com/in/uriel-castorela-cuevas/">linkedin.com/in/uriel-castorela-cuevas</a> &nbsp;·&nbsp;
+    <a href="https://github.com/urielbatizzzzzzzz">github.com/urielbatizzzzzzzz</a>
+  </div>
+
+  <h2>Professional Summary</h2>
+  <p class="summary">Software engineer focused on building high-availability SaaS platforms and robust transactional engines. Experienced in designing secure multi-tenant architectures with strict data isolation and dynamic routing. Specialized in resolving concurrent-processing bottlenecks through asynchronous refactoring and algorithmic optimization.</p>
+
+  <h2>Featured Technical Projects</h2>
+
+  <div class="project">
+    <div class="head"><span class="title">Castoralia — Multi-Tenant SaaS Platform for Clinical Management</span></div>
+    <ul>
+      <li>Ensured cryptographic isolation and safe data concurrency for multiple dental clinics, achieving 100% data-integrity retention through a multi-tenant architecture based on dynamic subdomain assignment and routing.</li>
+      <li>Designed the system end to end, from branding conception to relational database normalization, supporting clinical records at scale.</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="head"><span class="title">FinWise — Financial Sustainability Transaction Engine</span><span class="meta">Capital One Hackathon</span></div>
+    <ul>
+      <li>Refactored a blocking bottleneck into an asynchronous architecture, enabling support for massive concurrent user spikes with no service degradation.</li>
+      <li>Implemented a precise debt-management calculation engine, governed by a strict finite state machine (safe cycles 8→9→4→0) and dynamic algebraic-expression evaluation to compute amortizations while respecting operator precedence (e.g. <code>8+6/2*(3+1)</code>).</li>
+    </ul>
+  </div>
+
+  <div class="project">
+    <div class="head"><span class="title">Spatial-Resolution &amp; AI Solvers — Algorithmic Optimization</span></div>
+    <ul>
+      <li>Reduced memory footprint by optimizing informed-search algorithms (GBFS and A*) in high-complexity environments, scaling from 9×7 grids to higher-dimensional problems on the native Python 3.14 runtime.</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <div class="edu">
+    <div class="inst">Escuela Superior de Cómputo (ESCOM — IPN) — B.S. in Artificial Intelligence Engineering</div>
+    <div class="course">Relevant coursework: Systems Architecture, Algorithms, Data Structures</div>
+  </div>
+  <div class="edu">
+    <div class="inst">CECyT 9 "Juan de Dios Bátiz" (IPN) — Technician in Programming</div>
+  </div>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <b>Languages:</b> Python | TypeScript | Java &nbsp;·&nbsp;
+    <b>Backend/SaaS:</b> NestJS | React | Django &nbsp;·&nbsp;
+    <b>Databases:</b> PostgreSQL | MySQL | Multi-Tenant &nbsp;·&nbsp;
+    <b>Core:</b> OOP | A* | State Machines
+  </div>
+</body>
+</html>
