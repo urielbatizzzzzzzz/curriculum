@@ -208,3 +208,17 @@ export const links = {
     en: 'cv/CV_Uriel_Castorela_EN.pdf',
   },
 }
+
+// Enlaces por proyecto (mismo orden que projects.items en ambos idiomas).
+// Cada entrada es una lista de botones { es, en, url }. Deja [] si aún no hay repo público.
+export const projectLinks = [
+  // 0 · Castoralia — repo privado o pendiente de subir; agrega la URL aquí cuando esté listo.
+  [],
+  // 1 · FinWise
+  [
+    { es: 'Código', en: 'Code', url: 'https://github.com/urielbatizzzzzzzz/finwise' },
+    { es: 'Frontend', en: 'Frontend', url: 'https://github.com/urielbatizzzzzzzz/finwise_front' },
+  ],
+  // 2 · Motores de Resolución Espacial e IA — agrega la URL aquí cuando esté listo.
+  [],
+]
