@@ -1,4 +1,6 @@
-export default function Projects({ t, lang, projectLinks = [] }) {
+const privateLabel = { es: 'Repositorio privado', en: 'Private repository' }
+
+export default function Projects({ t, lang, projectLinks = [], projectPrivate = [] }) {
   return (
     <section id="projects" className="section section--alt">
       <div className="section__inner">
@@ -8,6 +10,7 @@ export default function Projects({ t, lang, projectLinks = [] }) {
         <div className="projects">
           {t.projects.items.map((p, i) => {
             const repos = projectLinks[i] || []
+            const isPrivate = projectPrivate[i]
             return (
               <article className="card reveal" key={i} style={{ transitionDelay: `${i * 90}ms` }}>
                 <div className="card__head">
@@ -35,6 +38,16 @@ export default function Projects({ t, lang, projectLinks = [] }) {
                         {r[lang]}
                       </a>
                     ))}
+                  </div>
+                )}
+                {repos.length === 0 && isPrivate && (
+                  <div className="card__links">
+                    <span className="card__private" title={privateLabel[lang]}>
+                      <svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true" fill="currentColor">
+                        <path d="M8 1a3 3 0 0 0-3 3v2H4.5A1.5 1.5 0 0 0 3 7.5v6A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-6A1.5 1.5 0 0 0 11.5 6H11V4a3 3 0 0 0-3-3zm1.5 5h-3V4a1.5 1.5 0 0 1 3 0v2z"/>
+                      </svg>
+                      {privateLabel[lang]}
+                    </span>
                   </div>
                 )}
               </article>

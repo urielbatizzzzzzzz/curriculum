@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { content, links, projectLinks } from './data/content.js'
+import { content, links, projectLinks, projectPrivate } from './data/content.js'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
 import About from './components/About.jsx'
@@ -49,7 +49,7 @@ export default function App() {
       <main>
         <Hero t={t} lang={lang} links={links} />
         <About t={t} />
-        <Projects t={t} lang={lang} projectLinks={projectLinks} />
+        <Projects t={t} lang={lang} projectLinks={projectLinks} projectPrivate={projectPrivate} />
         <Skills t={t} />
         <Education t={t} />
         <Contact t={t} links={links} />
